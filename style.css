@@ -1,0 +1,83 @@
+/* Font classes */
+
+.noto-serif {
+    font-family: 'Noto Serif', serif;
+}
+
+.titillium-web {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+}
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Backgroud styling */
+
+.gradiant-background {
+    background-size: cover;
+    background-image: url('assets/user.png'), linear-gradient(to right, #1C3763, #BB3B56)
+}
+
+/* Retina Support for image*/
+
+@media 
+  (-webkit-min-device-pixel-ratio: 2), 
+  (min-resolution: 192dpi) { 
+    .gradiant-background {
+        background-image: url('assets/userx2.png'), linear-gradient(to right, #1C3763, #BB3B56)
+    }
+  }
+
+/* Layout Styling */
+
+.full-screen {
+    height: 100vh;
+    width: 100vw;
+}
+
+.form-width {
+    width: 550px;
+}
+
+/* Form Styling */
+
+.form-input {
+    background: transparent;
+    border: solid 2px white;
+    border-radius: 30px;
+}
+
+.form-input::placeholder {
+    color: white;
+    letter-spacing: 2px;
+}
+
+.form-input:focus {
+    outline: none;
+    background: #392A40;
+}
+
+/* Button Styling */
+
+.styled-button {
+    width: 550px;
+    border-radius: 30px;
+    background: #1C3763;
+    letter-spacing: 2px;
+}
+
+.styled-button:hover {
+    background: #3862AF;
+}
+
+/* Hyperlinks Styling*/
+
+.links {
+    color: white;
+}
+
+.links:hover {
+    color: #392A40;
+}
